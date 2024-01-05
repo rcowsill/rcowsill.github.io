@@ -17,13 +17,14 @@ body {
 
 /* Make content wider and reduce padding around header and content */
 .inner {
-  max-width: 900px;
+  max-width: 840px;
   padding: 15px 10px 15px 10px !important;
 }
 
 /* Remove the empty tagline */
 #project_tagline {
-  display: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Hide markers on nested list items */
