@@ -1,0 +1,7 @@
+title: Hardware Repairs
+description: Pages describing some repairs I've done
+repository: rcowsill/HWRepairs
+remote_theme: pages-themes/slate@v0.2.0
+kramdown:
+  input: GFM
+  gfm_quirks: [paragraph_end, no_auto_typographic]
