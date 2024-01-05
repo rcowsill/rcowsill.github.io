@@ -31,6 +31,11 @@ li li {
   list-style: none;
 }
 
+/* Add some margin between nested list items */
+li li + li {
+  margin-top: 0.3ex;
+}
+
 /* Reduce margin after nested uls */
 li ul {
   margin-bottom: 0.6ex;
