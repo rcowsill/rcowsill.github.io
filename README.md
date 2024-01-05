@@ -44,7 +44,7 @@
   - The code that produces separate caches for each layer was being skipped on Windows due to path separator mismatch.
   - This PR rewrote the path handling to use the Node.js path module instead of string manipulation, avoiding the mismatch.
 
-<details><summary>more...</summary>
+<details markdown="1"><summary>More...</summary>
 
 * **[checkstyle/checkstyle#11014](https://github.com/checkstyle/checkstyle/pull/11014): infra: Set permissions required by the workflow**
 * **[checkstyle/checkstyle#11016](https://github.com/checkstyle/checkstyle/pull/11016): infra: Fix branch name (remove quotes)**
