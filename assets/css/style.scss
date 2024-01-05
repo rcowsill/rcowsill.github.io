@@ -1,0 +1,21 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Make body at least as tall as the viewport and set up flexbox */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make main content fill all remaining space after header/footer is accounted for */
+#main_content_wrap {
+  flex: 1;
+}
+
+/* Hide markers on nested list items */
+li li {
+  list-style: none;
+}
