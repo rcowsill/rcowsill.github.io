@@ -15,6 +15,17 @@ body {
   flex: 1;
 }
 
+/* Make content wider and reduce padding around header and content */
+.inner {
+  max-width: 900px;
+  padding: 15px 10px 15px 10px !important;
+}
+
+/* Remove the empty tagline */
+#project_tagline {
+  display: none;
+}
+
 /* Hide markers on nested list items */
 li li {
   list-style: none;
