@@ -5,7 +5,7 @@
   - A GitHub Action which scans GitHub Actions workflow files using CodeQL.
   - This makes it easy to use the [CodeQL queries](https://github.com/github/codeql/tree/main/javascript/ql/src/experimental/Security/CWE-094)
     created by the GitHub Security lab on the workflows in your repo.
-* **[rcowsill/SO-Focused](https://github.com/rcowsill/SO-Focused)** (View on [addons.mozilla.org](https://addons.mozilla.org/en-GB/firefox/addon/so-focused/))
+* **[rcowsill/SO-Focused](https://github.com/rcowsill/SO-Focused)** (View on [addons.mozilla.org](https://addons.mozilla.org/en-GB/addon/so-focused/))
   - A CSS-only WebExtension which hides the distracting sidebar elements on StackOverflow and related sites.
 
 ## Electronics
