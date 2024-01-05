@@ -30,3 +30,8 @@ body {
 li li {
   list-style: none;
 }
+
+/* Reduce margin after nested uls */
+li ul {
+  margin-bottom: 0.6ex;
+}
