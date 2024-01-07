@@ -17,6 +17,7 @@
   - Used in the USCI40 test firmware.
 * **[rcowsill/TestCards](https://github.com/rcowsill/TestCards)**
   - A test image that shows whether your graphics card's RGB output range matches your monitor's input range.
+  - Incorrect settings will make the display either clip shadows and highlights, or appear washed out.
 
 
 ---
@@ -85,9 +86,17 @@ The EpicGames GitHub repositories are private, follow these instructions to get 
   - This PR fixed incorrect display of "by reference" parameter values in the blueprint debugger.
 * **[EpicGames/UnrealEngine#8306](https://github.com/EpicGames/UnrealEngine/pull/8306): Add DrawSpline to Widget Blueprint library**
 * **[EpicGames/UnrealEngine#8406](https://github.com/EpicGames/UnrealEngine/pull/8406): [UE5] Slate line/spline rendering fixes**
-  - This PR fixed various issues with slate line and spline rendering. This functionality is heavily used by the editor, for example, in timeline curves.
-* **[EpicGames/UnrealEngine#8431](https://github.com/EpicGames/UnrealEngine/pull/8431): Slate: fix aliasing of glyph quad edges** (PENDING)
+  - This PR fixed various issues with slate line and spline rendering.
+  - Fixing the issues required a rewrite of the line geometry setup code and pixel shaders (HLSL and GLSL).
+  - The original code and this PR are based on ideas from [GPU Gems 2, Ch 22: Fast Prefiltered Lines](https://developer.nvidia.com/gpugems/gpugems2/part-iii-high-quality-rendering/chapter-22-fast-prefiltered-lines),
+    extended to handle line strips as well as individual line segments.
+  - This functionality is heavily used by the editor, for example, in timeline curves.
 * **[EpicGames/UnrealEngine#10524](https://github.com/EpicGames/UnrealEngine/pull/10524): Slate: Fix aliased glyph quad edges** (PENDING)
+  - This PR fixes a regression in Slate text rendering which causes aliasing on glyph quad boundaries
+  - The issue can be seen on text with subpixel translation, or render transform rotation/scale/shear.
+  - It's particularly noticeable in VR, where UI tends to be floating in world space.
+    In that case the text is almost never aligned to the display grid, so the lack of antialiasing becomes a lot more apparent.
+  - It also shows up in credits screens. The interior of each glyph scrolls smoothly, but glyph quad boundaries are effectively snapped to the nearest pixel.
 
 Note that accepted changes are submitted to Epic's internal Perforce, which is upstream of the GitHub repo.
 The PRs get closed rather than merged, but the commits include references to the original PR so you can see
