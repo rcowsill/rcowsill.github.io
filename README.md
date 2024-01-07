@@ -1,4 +1,4 @@
-# Github Catalogue
+# GitHub Catalogue
 ## Software
 
 * **[rcowsill/workflow-scan-action](https://github.com/rcowsill/workflow-scan-action)** (View on [Actions Marketplace](https://github.com/marketplace/actions/workflow-scan-action))
@@ -38,6 +38,11 @@
     This caused an error when loading images that were based on specific Windows images.
   - This PR worked around the issue by comparing the "created" times with `Equal`, avoiding the mismatch.
   - Confirmed fix in docker CLI v24 (appears to have landed in docker CLI v23).
+* **[OWASP/NodeGoat#224](https://github.com/OWASP/NodeGoat/pull/224): Add GitHub Actions "E2E Test" workflow**
+  - This PR ported the existing CI/CD workflow from Travis CI to GitHub Actions.
+* **[OWASP/NodeGoat#227](https://github.com/OWASP/NodeGoat/pull/227): Add lint workflow**
+  - This PR added a new GitHub Actions workflow that runs jshint over the codebase.
+  - Previously linting needed to be run locally before submitting contributions.
 * **[satackey/action-docker-layer-caching#82](https://github.com/satackey/action-docker-layer-caching/pull/82): Save only when new images were created** (Fixed [#81](https://github.com/satackey/action-docker-layer-caching/issues/81))
   - Previously the action treated restored images as "new", and reuploaded them as a new cache.
   - This PR fixed the issue by tracking restored and newly built images separately.
