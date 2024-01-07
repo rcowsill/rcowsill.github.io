@@ -87,7 +87,7 @@ Most were code injections into bash/js scripts run as part of the workflow.
 
 ### Game Development
 
-The EpicGames GitHub repositories are private, follow these instructions to get access: [https://www.unrealengine.com/ue-on-github](https://www.unrealengine.com/ue-on-github)
+The EpicGames GitHub repositories are private, access instructions are at: [https://www.unrealengine.com/ue-on-github](https://www.unrealengine.com/ue-on-github)
 
 * **[EpicGames/UnrealEngine#8141](https://github.com/EpicGames/UnrealEngine/pull/8141): Fix tooltip/watch text for by-ref function inputs**
   - This PR fixed incorrect display of "by reference" parameter values in the blueprint debugger.
