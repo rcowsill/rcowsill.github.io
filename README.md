@@ -43,6 +43,8 @@
 * **[OWASP/NodeGoat#227](https://github.com/OWASP/NodeGoat/pull/227): Add lint workflow**
   - This PR added a new GitHub Actions workflow that runs jshint over the codebase.
   - Previously linting needed to be run locally before submitting contributions.
+* **[OWASP/NodeGoat#230](https://github.com/OWASP/NodeGoat/pull/230): Enable video recording and upload on failure**
+  - This PR configured Cypress to record videos of each test, then made the workflow upload the videos and associated screenshots on failure.
 * **[satackey/action-docker-layer-caching#82](https://github.com/satackey/action-docker-layer-caching/pull/82): Save only when new images were created** (Fixed [#81](https://github.com/satackey/action-docker-layer-caching/issues/81))
   - Previously the action treated restored images as "new", and reuploaded them as a new cache.
   - This PR fixed the issue by tracking restored and newly built images separately.
