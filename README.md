@@ -63,6 +63,9 @@
 * **[containers/podman#10255](https://github.com/containers/podman/pull/10255): [CI:DOCS] Stop conversion of `--` into en dash** (Fixed [#389](https://github.com/containers/podman.io_old/issues/389))
 * **[criteo/JVips#83](https://github.com/criteo/JVips/pull/83): Fix docker layer caching in build workflow**
 * **[jenkinsci/build-time-blame-plugin#62](https://github.com/jenkinsci/build-time-blame-plugin/pull/62): Fix cast exception when a run has a missing step** (Fixed [#61](https://github.com/jenkinsci/build-time-blame-plugin/issues/61))
+* **[OWASP/NodeGoat#214](https://github.com/OWASP/NodeGoat/pull/214): Fix intermittent test failures**
+* **[OWASP/NodeGoat#218](https://github.com/OWASP/NodeGoat/pull/218): Fix repeated dbResets so tests run faster**
+* **[OWASP/NodeGoat#223](https://github.com/OWASP/NodeGoat/pull/223): Fix Travis config warnings** (Fixed [#219](https://github.com/OWASP/NodeGoat/issues/219))
 * **[satackey/action-docker-layer-caching#90](https://github.com/satackey/action-docker-layer-caching/pull/90): Detect updated "cache exists" error message** (Fixed [#85](https://github.com/satackey/action-docker-layer-caching/issues/85))
 </details>
 
@@ -118,3 +121,4 @@ which branch(es) they've landed in.
 * **[github/docs#10376](https://github.com/github/docs/pull/10376): Add missing "Open Git Bash" step**
 * **[mdn/content#8915](https://github.com/mdn/content/pull/8915): Clarify CSS injection timing**
 * **[nodejs/nodejs.dev#2118](https://github.com/nodejs/nodejs.dev/pull/2118): fix: Update links to match section header IDs**
+* **[OWASP/NodeGoat#235](https://github.com/OWASP/NodeGoat/pull/235): Update links in A9 Tutorial description** (Fixed [#234](https://github.com/OWASP/NodeGoat/issues/234))
