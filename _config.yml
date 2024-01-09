@@ -4,3 +4,7 @@ remote_theme: pages-themes/slate@v0.2.0
 kramdown:
   input: GFM
   gfm_quirks: [paragraph_end, no_auto_typographic]
+optional_front_matter:
+  remove_originals: true
+readme_index:
+  remove_originals: true
