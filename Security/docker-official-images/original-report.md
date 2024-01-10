@@ -1,5 +1,6 @@
+# Vulnerability Report - docker-library/official-images
 <!-- This report, originally sent to security@docker.com, is reproduced here by kind permission of the official-images maintainers -->
-# Summary
+## Summary
 
 The GitHub repo [docker-library/official-images](https://github.com/docker-library/official-images) is the 'Primary source of truth for the Docker "Official Images" program'. It contains the following GitHub Actions workflow, which is vulnerable to code injection:
 
@@ -9,13 +10,13 @@ This workflow runs with full write permissions, so code injected here can push c
 
 An attacker could exploit this to modify the library metadata, pointing official image tags at attacker-controlled images. This could have a large impact, as all images built "FROM" the modified tags would be affected.
 
-# Description
+## Description
 
 The root cause is that the 'gather' step prints attacker-controlled text (ie filenames from the PR head commit) without first stopping workflow command processing.
 
 In a fork, files can be added under 'library/' with workflow commands embedded in their names. Submitting a PR containing these files to `docker-library/official-images` will run these commands during the 'gather' step of the munge-pr workflow. This can be used to override the 'images' output of the gather step, which is later injected into the script source of the 'apply-labels' step.
 
-# Proof of Concept
+## Proof of Concept
 
 1. Log in to GitHub using an account with no write access to `docker-library/official-images`
 2. Fork `docker-library/official-images`
@@ -32,7 +33,7 @@ When the name of the file created in step 4 is printed it sets the 'images' outp
 
 The 'apply-label' step inserts the 'images' payload into the github-script source and runs the script. The first-stage payload then runs the PR message body as the second stage. The second stage has access to the authenticated github client with full write permissions.
 
-# Recommendations
+## Recommendations
 
 1. Prevent override of 'gather' job output:
    - Stop workflow command processing up until the final command to set the output
