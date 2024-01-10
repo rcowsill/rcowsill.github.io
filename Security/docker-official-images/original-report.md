@@ -4,7 +4,7 @@
 
 The GitHub repo [docker-library/official-images](https://github.com/docker-library/official-images) is the 'Primary source of truth for the Docker "Official Images" program'. It contains the following GitHub Actions workflow, which is vulnerable to code injection:
 
-https://github.com/docker-library/official-images/blob/573588c0bfa11dac042d3b666de19d55a1a80d9f/.github/workflows/munge-pr.yml
+[https://github.com/docker-library/official-images/blob/573588c0bfa11dac042d3b666de19d55a1a80d9f/.github/workflows/munge-pr.yml](https://github.com/docker-library/official-images/blob/573588c0bfa11dac042d3b666de19d55a1a80d9f/.github/workflows/munge-pr.yml)
 
 This workflow runs with full write permissions, so code injected here can push commits directly to the master branch.
 
@@ -48,4 +48,4 @@ I'd be happy to help with a PR implementing the changes for points 1-3 if desire
 
 Regards,\
 Rob Cowsill\
-https://github.com/rcowsill
+[https://github.com/rcowsill](https://github.com/rcowsill)
