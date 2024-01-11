@@ -73,7 +73,7 @@
 
 Fixes for various security issues in GitHub Actions/Workflows:
 
-* **[docker-library/official images: CI/CD vulnerability report and fixes](Security/docker-official-images/overview.md)**
+* **[docker-library/official images: CI/CD vulnerability report and fixes](Security/docker-official-images)**
 * **[hmarr/debug-action#5](https://github.com/hmarr/debug-action/pull/5): Block unexpected workflow commands**
 * **[marocchino/sticky-pull-request-comment#332](https://github.com/marocchino/sticky-pull-request-comment/pull/332): Fix: Ignore other users' comments**
   - This action used a hidden flag string to mark the comments it created, allowing them to be found for update/replacement later.
