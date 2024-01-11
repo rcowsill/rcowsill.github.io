@@ -118,7 +118,7 @@ After reconnecting the main PCB to the drivers and volume board, switching the s
 Since the repair they've been in regular use for over a year[^4] with no noticeable issues.
 
 
-[^1]: https://jade.wtf/tech-notes/makie-cr4-switch/
-[^2]: https://www.mikrocontroller.net/articles/Mackie_Creative_Reference_CR3_CR4_Reparatur_Repair
-[^3]: https://www.reddit.com/r/audio/comments/g3aalp/comment/g4qn50l/
+[^1]: [jade.wtf/tech-notes/makie-cr4-switch](https://jade.wtf/tech-notes/makie-cr4-switch/)
+[^2]: [www.mikrocontroller.net/articles/Mackie_Creative_Reference_CR3_CR4_Reparatur_Repair](https://www.mikrocontroller.net/articles/Mackie_Creative_Reference_CR3_CR4_Reparatur_Repair)
+[^3]: [www.reddit.com/r/audio/comments/g3aalp/comment/g4qn50l](https://www.reddit.com/r/audio/comments/g3aalp/comment/g4qn50l/)
 [^4]: I've also been more careful to avoid leaving them in standby, as that maximises the current through the diodes. 
