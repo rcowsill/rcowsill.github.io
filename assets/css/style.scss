@@ -21,6 +21,11 @@ body {
   padding: 15px 10px 15px 10px !important;
 }
 
+/* Make images as wide as the content column */
+img {
+  max-width: 100%;
+}
+
 /* Remove the empty tagline */
 #project_tagline {
   margin: 0;
