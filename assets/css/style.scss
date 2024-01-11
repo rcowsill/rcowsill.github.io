@@ -64,6 +64,11 @@ li ul {
   padding-top: 0.7em;
 }
 
+/* Adjust footnote spacing */
+.footnotes p {
+  margin: 0.25em 0;
+}
+
 /* Workaround for broken superscript style from theme */
 sup {
   font-variant-position: super;
