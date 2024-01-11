@@ -1,6 +1,6 @@
 description: <a href="https://github.com/rcowsill">github.com/rcowsill</a>
 repository: rcowsill/rcowsill.github.io
-remote_theme: rcowsill/jekyll-theme-slate@v0.2.0
+remote_theme: rcowsill/jekyll-theme-slate@v0.2.1-alpha
 kramdown:
   input: GFM
   gfm_quirks: [paragraph_end, no_auto_typographic]
