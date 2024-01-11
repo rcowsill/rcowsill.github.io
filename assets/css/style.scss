@@ -41,3 +41,16 @@ li li + li {
 li ul {
   margin-bottom: 0.6ex;
 }
+
+/* Footnotes */
+.footnote::before {
+  content: "[";
+}
+
+.footnote::after {
+  content: "]";
+}
+
+.footnote {
+  font-variant-position: super;
+}
