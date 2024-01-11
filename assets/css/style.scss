@@ -5,6 +5,7 @@
 
 /* Make body at least as tall as the viewport and set up flexbox */
 body {
+  min-width: min-content;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
