@@ -42,15 +42,24 @@ li ul {
   margin-bottom: 0.6ex;
 }
 
-/* Footnotes */
+/* Prefix footnote references with '[' */
 .footnote::before {
   content: "[";
 }
 
+/* Suffix footnote references with ']' */
 .footnote::after {
   content: "]";
 }
 
+/* Use superscript for footnote references */
 .footnote {
   font-variant-position: super;
+}
+
+/* Add line between main content and footnotes, adjust spacing */
+.footnotes {
+  border-top: solid 2px black;
+  margin-top: 3em;
+  padding-top: 0.7em;
 }
