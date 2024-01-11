@@ -1,6 +1,6 @@
 # Repairs - Mackie CR4 Speakers
 
-![A pair of loudspeakers in black enclosures with green trim.](Images/External.jpg "Mackie CR4 Speakers")
+[![A pair of loudspeakers in black enclosures with green trim](Images/External.jpg "Mackie CR4 Speakers")](Images/External.jpg)
 
 
 ## Fault Summary
@@ -38,11 +38,11 @@ Opening up the powered speaker revealed that the ±12V power supply had indeed b
 
 Here you can see the charred area of the PCB near the diodes Z3 and Z4:
 
-![Closeup of the circuit board showing charring under diodes Z3 and Z4.](Images/BeforeFront.jpg "PCB before repair (front)")
+[![Closeup of the charred circuit board](Images/BeforeFront.jpg "PCB before repair (front)")](Images/BeforeFront.jpg)
 
 With the PCB backlit, the extent of the damage is visible (image mirrored to match the one above):
 
-![Backlit closeup of the circuit board showing the charring is only present near the diodes](Images/BeforeBack.jpg "PCB before repair (back)")
+[![Backlit closeup of the circuit board showing the charring is only present near the diodes](Images/BeforeBack.jpg "PCB before repair (back)")](Images/BeforeBack.jpg)
 
 I also checked the output voltages of the shunt regulators. The negative rail was at -9.4V, and the Zener diode leads
 were hot enough to melt the plastic parts of the test clips!
@@ -70,7 +70,7 @@ I emailed Mackie support to request it, and they were happy to send me a copy.
 Comparing it with the actual board, I noticed that the series resistor values didn't match. The design called for
 220Ω resistors, but the board has 100Ω:
 
-![Excerpt from the manufacturers schematic.](Images/SchematicExcerpt.png "Schematic excerpt")
+[![Excerpt from the manufacturers schematic](Images/SchematicExcerpt.png "Schematic excerpt")](Images/SchematicExcerpt.png)
 
 That allows more current to be drawn from the power supply if needed, but significantly increases heat output.
 
@@ -86,7 +86,7 @@ corresponding label on the schematic.
 Being unsure of which design was "correct", I simulated the board in LTSpice to get a better understanding of
 the current requirements:
 
-![LTSpice schematic of the full circuit board (excluding the power amplifier).](Images/SpiceSchematic.png "LTSpice schematic")
+[![LTSpice schematic of the full circuit board (excluding the power amplifier)](Images/SpiceSchematic.png "LTSpice schematic")](Images/SpiceSchematic.png)
 
 As far as I could tell, the highest current was required when driving headphones at high volume. In particular,
 only very low-impedance headphones were affected (the type of earbuds that are cheap enough to give away). My
@@ -103,11 +103,11 @@ another 10 years or so, even if the reduced current doesn't help.
 I also added some 100uF electrolytic capacitors to the order in case the ones near the diodes needed replacing. 
 I ended up replacing C80 and C81, as they were in the heat-affected area and easy to access.
 
-![Closeup of circuit board showing replaced diodes Z3 and Z4, resistors R1 and R2 and capacitors C80 and C81.](Images/AfterFront.jpg "PCB after repair (front)")
+[![Closeup of circuit board showing replaced diodes Z3/Z4, resistors R1/R2 and capacitors C80/C81](Images/AfterFront.jpg "PCB after repair (front)")](Images/AfterFront.jpg)
 
 Here you can see that I've raised the diodes off the board a little in the hope of getting better airflow:
 
-![Closeup of circuit board showing replaced diodes Z3 and Z4 are standing clear of the PCB.](Images/AfterSide.jpg "PCB after repair (side)")
+[![Closeup of circuit board showing replaced diodes Z3 and Z4 are standing clear of the PCB](Images/AfterSide.jpg "PCB after repair (side)")](Images/AfterSide.jpg)
 
 This might just limit their ability to sink heat into the PCB, but I'd rather the diodes burned themselves out without 
 cooking the board.
