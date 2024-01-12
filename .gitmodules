@@ -1,0 +1,3 @@
+[submodule "Electronics/TestCards"]
+	path = Electronics/TestCards
+	url = https://github.com/rcowsill/TestCards.git
