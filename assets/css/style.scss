@@ -33,6 +33,20 @@ img {
   padding: 0;
 }
 
+/* Reduce top and bottom padding */
+#forkme_banner {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* Break label over two lines, centred  */
+#forkme_label {
+  display: block;
+  width: min-content;
+  text-align: center;
+  line-height: 1.1;
+}
+
 /* Hide markers on nested list items */
 li li {
   list-style: none;
