@@ -16,7 +16,7 @@
 * **[MSP430 variable delay routine](https://gist.github.com/rcowsill/213b8db204a554c419369d1027b3e221)** (Gist)
   - Used in the USCI40 test firmware.
 * **[Repair of Mackie CR4 Speakers](Repairs/MackieCR4)**
-  - Investigation and fix of a faulty amplifier board
+  - Investigation and fix of a faulty amplifier board.
 * **[rcowsill/TestCards](Electronics/TestCards)**
   - A test image that shows whether your graphics card's RGB output range matches your monitor's input range.
   - Incorrect settings will make the display either clip shadows and highlights, or appear washed out.
