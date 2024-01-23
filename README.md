@@ -90,7 +90,6 @@ Fixes for various security issues in GitHub Actions/Workflows:
 
 Most were code injections into bash/js scripts run as part of the workflow.
 
-
 ### Game Development
 
 The EpicGames GitHub repositories are private, access instructions are at: [https://www.unrealengine.com/ue-on-github](https://www.unrealengine.com/ue-on-github)
@@ -114,6 +113,13 @@ The EpicGames GitHub repositories are private, access instructions are at: [http
 Note that accepted changes are submitted to Epic's internal Perforce, which is upstream of the GitHub repo.
 The PRs get closed rather than merged, but the commits include references to the original PR so you can see
 which branch(es) they've landed in.
+
+### Web Security
+
+* **[OWASP/NodeGoat#226](https://github.com/OWASP/NodeGoat/pull/226): Fix crash when research page server-side request fails** (Fixed [#225](https://github.com/OWASP/NodeGoat/issues/225))
+  - This PR fixed a crash which would lead to denial of service if done to the public instance of NodeGoat.
+* **[OWASP/NodeGoat#233](https://github.com/OWASP/NodeGoat/pull/233): Fix path traversal vulnerability** (Fixed [#232](https://github.com/OWASP/NodeGoat/issues/232))
+  - This PR fixed a vulnerable route which passed user input directly to Express' `res.render(...)` function.
 
 ### Documentation
 
