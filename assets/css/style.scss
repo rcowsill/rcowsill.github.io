@@ -19,6 +19,7 @@ body {
 /* Hang the banner below the header, use link color as background */
 #forkme_banner {
   top: 100%;
+  color: revert;
   background-color: currentColor;
 }
 
