@@ -72,7 +72,13 @@ li ul {
 
 .home-link-icon {
   height: 0.6em;
-  padding-inline: 0.2em;
+  padding-inline-start: 0.4em;
+}
+
+.home-link {
+  display: flex;
+  align-items: baseline;
+  width: max-content;
 }
 
 /* Link icon matches text color by default, gets link color on hover/focus */
