@@ -1,3 +1,6 @@
 [submodule "Electronics/TestCards"]
 	path = Electronics/TestCards
 	url = https://github.com/rcowsill/TestCards.git
+[submodule "Electronics/USCI40_demo"]
+	path = Electronics/USCI40_demo
+	url = https://github.com/rcowsill/USCI40_demo.git
