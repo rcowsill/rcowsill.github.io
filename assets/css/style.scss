@@ -70,9 +70,14 @@ li ul {
   margin: 0.25em 0;
 }
 
+/* Don't apply link color in header */
+header a {
+  color: inherit;
+}
+
 .home-link-icon {
   height: 0.6em;
-  padding-inline-start: 0.4em;
+  padding-inline-start: 0.3em;
 }
 
 .home-link {
