@@ -1,0 +1,22 @@
+<div id="header_wrap" class="outer">
+  <header class="inner">
+    <h1 id="project_title">
+      {{ page.url }}
+      {% if page.url != blank %}
+        <a href="{{ site.url }}" class="home-link">
+      {% endif %}
+          {{ site.title | default: site.github.repository_name }}
+      {% if page.url != blank %}
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor" class="bi bi-house-fill home-link-icon" height="1em" viewBox="0 1.15 16 14">
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+          </svg>
+        </a>
+      {% endif %}
+    </h1>
+    <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+    {% if page.submodule_url and page.submodule_url != blank %}
+      <a id="forkme_banner" href="{{ page.submodule_url }}"><span id="forkme_label">View&nbsp;on GitHub</span></a>
+    {% endif %}
+  </header>
+</div>
