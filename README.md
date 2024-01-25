@@ -10,7 +10,7 @@
 
 ## Electronics
 
-* **[rcowsill/USCI40_demo](https://github.com/rcowsill/USCI40_demo): MSP430 USCI40 erratum demonstration**
+* **[rcowsill/USCI40_demo](Electronics/USCI40_demo): MSP430 USCI40 erratum demonstration**
   - A test firmware written to characterise a bug in the MSP430 USCI peripheral, and a report on the results.
   - The results were passed on to Texas Instruments, leading to the addition of USCI40 to the errata list.
 * **[MSP430 variable delay routine](https://gist.github.com/rcowsill/213b8db204a554c419369d1027b3e221)** (Gist)
