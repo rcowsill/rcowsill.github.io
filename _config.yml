@@ -9,16 +9,17 @@ optional_front_matter:
 readme_index:
   remove_originals: true
 defaults:
-  -
-    scope:
+  - scope:
       path: "Electronics/TestCards"
     values:
       layout: "submodule"
       submodule_url: "https://github.com/rcowsill/TestCards"
+  - scope:
+      path: "Electronics/USCI40_demo"
+    values:
+      layout: "submodule"
+      submodule_url: "https://github.com/rcowsill/USCI40_demo"
 exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
   - Gemfile
   - Gemfile.lock
   - node_modules/
@@ -27,3 +28,6 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - "**/LICENSE"
+  - "**.asm"
+  - "**.c"
+  - "**.cmd"
