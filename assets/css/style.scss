@@ -70,6 +70,16 @@ li ul {
   margin: 0.25em 0;
 }
 
+.home-link-icon {
+  height: 0.6em;
+  padding-inline: 0.2em;
+}
+
+/* Link icon matches text color by default, gets link color on hover/focus */
+.home-link:not(:hover, :focus) {
+  color: inherit;
+}
+
 @media screen and (max-width: 480px) {
   /* Reduce top and bottom padding */
   #forkme_banner {
