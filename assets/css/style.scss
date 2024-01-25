@@ -70,6 +70,11 @@ li ul {
   margin: 0.25em 0;
 }
 
+/* Restore user-agent link colors */
+a {
+  color: revert;
+}
+
 /* Don't apply link color in header */
 header a {
   color: inherit;
