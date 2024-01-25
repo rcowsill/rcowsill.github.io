@@ -11,8 +11,19 @@ body {
   flex-direction: column;
 }
 
+/* Put a fake header border inside element */
+#header_wrap {
+  box-shadow: inset 0 -1px #111;
+}
+
+/* Hang the banner below the header */
+#forkme_banner {
+  top: 100%;
+}
+
 /* Make main content fill all remaining space after header/footer is accounted for */
 #main_content_wrap {
+  border-top: none;
   flex: 1;
 }
 
