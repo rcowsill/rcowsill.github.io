@@ -41,7 +41,8 @@ body {
 }
 
 /* Make images as wide as the content column */
-img {
+p img {
+  display: block;
   max-width: 100%;
 }
 
