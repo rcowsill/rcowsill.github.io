@@ -1,3 +1,8 @@
+---
+title: Slow Entry Trampoline?
+tags: WebAssembly JavaScript Browser Performance
+---
+
 # Slow Entry Trampoline?
 
 This week I've been using Firefox Profiler on a site I'm building. While looking at the stack chart of a
