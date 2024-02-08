@@ -8,6 +8,9 @@ optional_front_matter:
   remove_originals: true
 readme_index:
   remove_originals: true
+collections:
+  posts:
+    permalink: /blog/:year/:month/:day/:title/
 defaults:
   - scope:
       path: "Electronics/TestCards"
