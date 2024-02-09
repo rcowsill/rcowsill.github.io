@@ -1,0 +1,22 @@
+{% comment -%}
+# Parameters:
+#   include.posts - Array of posts to include in the list. Defaults to site.posts
+#   include.limit - Maximum number of posts to show. Shows all posts by default
+#   include.class - CSS class applied to the outer list. Defaults to "post-list"
+#   include.excerpt_start - Tag marking start of excerpt. Defaults to "<!-- page_excerpt -->"
+{% endcomment -%}
+
+{% assign posts_to_show = include.posts | default: site.posts -%}
+{% if limit -%}
+{% assign posts_to_show = posts_to_show | slice: 0, limit -%}
+{% endif -%}
+{% assign input_excerpt_start = include.excerpt_start | default: "<!-- page_excerpt -->" -%}
+
+<ul class="{{ include.list-class | default: "post-list" }}">
+  {% for post in posts_to_show -%}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%e %b %Y" | strip }})
+    <ul><li>{{ post.excerpt | split: input_excerpt_start | last }}</li></ul>
+  </li>
+  {% endfor -%}
+</ul>
