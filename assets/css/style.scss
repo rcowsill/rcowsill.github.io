@@ -89,6 +89,11 @@ li ul {
   margin: 0.25em 0;
 }
 
+/* Hide footnotes and their references in post excerpts */
+.post-list :is(.footnotes, .footnote) {
+  display: none;
+}
+
 /* Restore user-agent link colors */
 a {
   color: revert;
