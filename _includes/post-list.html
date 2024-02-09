@@ -16,7 +16,7 @@
   {% for post in posts_to_show -%}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%e %b %Y" | strip }})
-    <ul><li>{{ post.excerpt | split: input_excerpt_start | last }}</li></ul>
+    <ul><li>{{ post.excerpt | split: input_excerpt_start | last | rstrip }}&hellip;</li></ul>
   </li>
   {% endfor -%}
 </ul>
