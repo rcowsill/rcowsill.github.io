@@ -5,8 +5,9 @@ tags: WebAssembly JavaScript Browser Performance
 
 # Slow Entry Trampoline?
 
+<!-- page_excerpt -->
 This week I've been using Firefox Profiler on a site I'm building. While looking at the stack chart of a
-WebAssembly function, I noticed this:
+WebAssembly function, I noticed this<!-- endpage_excerpt -->:
 
 [![Stack Chart showing a WebAssembly function called via "slow entry trampoline"][img-stack]][img-stack]
 
