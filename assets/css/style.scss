@@ -22,8 +22,8 @@ body {
   top: 100%;
   color: revert;
   background-color: currentColor;
-  border-radius-bottom-left: --var(corner-radius);
-  border-radius-bottom-right: --var(corner-radius);
+  border-bottom-left-radius: var(--corner-radius);
+  border-bottom-right-radius: var(--corner-radius);
 }
 
 #forkme_label {
