@@ -40,10 +40,21 @@ body {
   padding: 15px 10px 15px 10px !important;
 }
 
-/* Make images as wide as the content column */
+/* Give images block layout */
 p img {
   display: block;
-  max-width: 100%;
+}
+
+/* Limit image and code blocks to colum width, with some margin either side */
+.highlighter-rouge,
+p img {
+  max-width: calc(100% - 2.4rem);
+  margin-inline: auto;
+}
+
+/* Leave space above hr tags for layout */
+hr {
+  margin-top: 60px;
 }
 
 /* Remove the empty tagline */
