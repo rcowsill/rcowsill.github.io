@@ -15,7 +15,7 @@
 <ul class="{{ include.list-class | default: "post-list" }}">
   {% for post in posts_to_show -%}
   <li>
-    <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%e %b %Y" | strip }})
+    <a href="{{ post.url }}">**{{ post.title }}**</a> ({{ post.date | date: "%e %b %Y" | strip }})
     <ul><li>{{ post.excerpt | split: input_excerpt_start | last | strip_html | rstrip }}&hellip;</li></ul>
   </li>
   {% endfor -%}
