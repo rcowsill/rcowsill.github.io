@@ -1,9 +1,14 @@
 {% if site.posts.size > 0 -%}
 # Blog
 
-{% include post-list.html limit=3 -%}
+{% assign post_limit = 3 -%}
+{% include post-list.html limit=post_limit -%}
+{% if site.posts.size > post_limit -%}
+**[More...](\blog)**
+{% endif -%}
 {% endif -%}
 
+---
 
 # GitHub Catalogue
 ## Software
