@@ -9,6 +9,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  --corner-radius: 6px;
 }
 
 /* Put a fake header border inside element */
@@ -21,6 +22,8 @@ body {
   top: 100%;
   color: revert;
   background-color: currentColor;
+  border-radius-bottom-left: --var(corner-radius);
+  border-radius-bottom-right: --var(corner-radius);
 }
 
 #forkme_label {
@@ -57,7 +60,7 @@ hr {
   margin-top: 60px;
 }
 
-/* Remove the empty tagline */
+/* Tighter spacing in header */
 #project_tagline {
   margin: 0;
   padding: 0;
