@@ -55,6 +55,17 @@ p img {
   margin-inline: auto;
 }
 
+/* Remove border effect from code blocks */
+pre.highlight {
+  padding: 0;
+}
+
+/* Remove border effect from code blocks and add more internal padding */
+pre.highlight code {
+  padding: 8px;
+  margin: 0;
+}
+
 /* Leave space above hr tags for layout */
 hr {
   margin-top: 60px;
@@ -101,11 +112,6 @@ li ul {
 /* Adjust footnote spacing */
 .footnotes p {
   margin: 0.25em 0;
-}
-
-/* Hide footnotes and their references in post excerpts */
-.post-list :is(.footnotes, .footnote) {
-  display: none;
 }
 
 /* Restore user-agent link colors */
