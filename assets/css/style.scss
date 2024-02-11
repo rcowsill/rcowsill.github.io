@@ -59,12 +59,14 @@ p img {
 /* Remove border effect from code blocks */
 pre.highlight {
   padding: 0;
+  background-color: #fcfaf8;
 }
 
 /* Remove border effect from code blocks and add more internal padding */
 pre.highlight code {
   padding: 8px;
   margin: 0;
+  background-color: transparent; /* Work around incorrect box size on overflow */
 }
 
 /* Leave space above hr tags for layout */
