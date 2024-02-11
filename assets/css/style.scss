@@ -43,9 +43,10 @@ body {
   padding: 15px 10px 15px 10px !important;
 }
 
-/* Give images block layout */
+/* Give images block layout and a shadow (same as on code blocks) */
 p img {
   display: block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 /* Limit image and code blocks to colum width, with some margin either side */
