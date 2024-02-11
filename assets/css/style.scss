@@ -58,6 +58,8 @@ p img {
 
 /* Remove border effect from code blocks */
 pre.highlight {
+  display: grid; /* This makes the scrollbar include child padding */
+  contain: paint layout style inline-size;
   padding: 0;
   background-color: #fcfaf8;
 }
