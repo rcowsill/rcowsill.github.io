@@ -147,7 +147,7 @@ header :is(h1, h2) a {
 
 .post-tags {
   display: flex;
-  column-gap: 1em;
+  gap: 0.2em 0.6em;
   flex-wrap: wrap;
   padding-left: 0;
 }
