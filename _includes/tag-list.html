@@ -1,0 +1,19 @@
+{% comment -%}
+# Parameters:
+#   include.tags - Array of tags to include in the list. Defaults to page.tags
+#   include.limit - Maximum number of tags to show. Shows all posts by default
+#   include.list_class - CSS class applied to the tag list. Defaults to "tag-list"
+{% endcomment -%}
+
+{% assign tags_to_show = include.tags| default: page.tags -%}
+{% if include.limit -%}
+{% assign tags_to_show = tags_to_show | slice: 0, include.limit -%}
+{% endif -%}
+
+{% if tags_to_show.size > 0 -%}
+<ul class="{{ include.list_class | default: "tag-list" }}">
+  {% for tag in tags_to_show -%}
+  <li>{{ tag }}</li>
+  {% endfor -%}    
+</ul>
+{% endif -%}
