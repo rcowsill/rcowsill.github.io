@@ -3,7 +3,6 @@
 #   include.posts - Array of posts to include in the list. Defaults to site.posts
 #   include.limit - Maximum number of posts to show. Shows all posts by default
 #   include.list_class - CSS class applied to the outer list. Defaults to "post-list"
-#   include.tags_class - CSS class applied to the tag list. Defaults to "post-tags"
 #   include.excerpt_start - Tag marking start of excerpt. Defaults to "<!-- page_excerpt -->"
 {% endcomment -%}
 
@@ -17,13 +16,7 @@
   {% for post in posts_to_show -%}
   <li>
     <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a> ({{ post.date | date: "%e %b %Y" | strip }})
-    {% if post.tags.size > 0 -%}
-    <ul class="{{ include.tags_class | default: "post-tags" }}">
-      {% for tag in post.tags -%}
-      <li>{{ tag }}</li>
-      {% endfor -%}    
-    </ul>
-    {% endif -%}
+    {% include tag-list.html tags=post.tags -%}
     <blockquote>{{ post.excerpt | split: input_excerpt_start | last | strip_html | rstrip }}&hellip;</blockquote>
   </li>
   {% endfor -%}
