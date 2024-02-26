@@ -5,7 +5,7 @@
 #   include.list_class - CSS class applied to the tag list. Defaults to "tag-list"
 {% endcomment -%}
 
-{% assign tags_to_show = include.tags| default: page.tags -%}
+{% assign tags_to_show = include.tags | default: page.tags -%}
 {% if include.limit -%}
 {% assign tags_to_show = tags_to_show | slice: 0, include.limit -%}
 {% endif -%}
