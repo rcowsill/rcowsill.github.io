@@ -145,14 +145,14 @@ header :is(h1, h2) a {
   color: inherit;
 }
 
-.post-tags {
+.tag-list {
   display: flex;
   gap: 0.2em 0.6em;
   flex-wrap: wrap;
   padding-left: 0;
 }
 
-.post-tags > li {
+.tag-list > li {
   background-color: lightgrey;
   border-radius: 1000px;
   padding-inline: 0.6em;
