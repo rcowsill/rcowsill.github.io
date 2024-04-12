@@ -14,6 +14,10 @@
 # GitHub Catalogue
 ## Software
 
+* **[JPEGSawmill](JPEGSawmill)**
+  - A web application that splits up progressive JPEGs into their individual scans for inspection.
+    Progressive display can be simulated in slow-motion to see how the image will appear on slow connections.
+  - Built with Preact/HTM and Emscripten (compiling C++ to WASM)
 * **[rcowsill/workflow-scan-action](https://github.com/rcowsill/workflow-scan-action)** (View on [Actions Marketplace](https://github.com/marketplace/actions/workflow-scan-action))
   - A GitHub Action which scans GitHub Actions workflow files using CodeQL.
   - This makes it easy to use the [CodeQL queries](https://github.com/github/codeql/tree/main/javascript/ql/src/experimental/Security/CWE-094)
